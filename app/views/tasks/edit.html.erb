@@ -3,6 +3,9 @@
 <%= form_with(model: @task, local: true) do |e|%>
   <%= e.label :content, 'タスク'%>
   <%= e.text_field :content%>
+  <%= e.submit '送信' %>
+  
 <%end%>
+
 
 <%= link_to '一覧に戻る', tasks_path %>
